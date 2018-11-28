@@ -153,46 +153,70 @@
           </ol>
             -->
           <!-- Page Content -->
-          <h2>Adicionar Cardápio</h2>
-          <hr>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Nome</p>
-                    <input type="text" value="Cardápio 1" class="form-control">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Descrição</p>
-                    <textarea rows="4" cols="50" placeholder="Digite algo..." class="form-control">Descrição do cardápio</textarea>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Código de Confirmação</p>
-                    <input type="text" placeholder="A1B2C3D4" value="-" class="form-control">
-                </div>
-
-            </div>
-            <!--
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <input type="checkbox" id="usr">
-                    <label for="usr">Tornar ativo</label>
-                </div>
-
-            </div>
-            -->
+          
+            <h2>Consultar itens</h2>
             <hr>
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <br><a class="btn btn-primary" href="modificar-cardapio.html">Confirmar</a>
-                    <a class="btn btn-secondary" href="modificar-cardapio.html">Cancelar</a>
-                </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Itens</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Descrição</th>
+                      <th>Preço (R$)</th>
+                      <th>Criado por</th>
+                      <th>Promoção (%)</th>
+                    </tr>
+                  </thead>
+                    <tbody>
+                        <tr>
+                            <td>Item 1</td>
+                            <td>Descrição do item</td>
+                            <td>10.00</td>
+                            <td>Marcelo Cavalca</td>
+                            <td>0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Segundo Item</td>
+                            <td>O melhor da região!</td>
+                            <td>15.00</td>
+                            <td>Administrador</td>
+                            <td>0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pizza Calabresa</td>
+                            <td>Cuidado! Contém pimenta!!!</td>
+                            <td>25.00</td>
+                            <td>Matheus</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pizza Mussarela</td>
+                            <td>Com o molho especial do chefe</td>
+                            <td>20.00</td>
+                            <td>Balconista</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Fritas com Queijo</td>
+                            <td>Batatas cortadas e fritas na hora, com o delicioso queijo cheddar.</td>
+                            <td>14.90</td>
+                            <td>Balconista</td>
+                            <td>5.00</td>
+                        </tr>
+                        
+                        <!-- APAGAR -->
+
+                        <!-- APAGAR -->
+                    </tbody>
+                </table>
+              </div>
             </div>
-        </div>
+           </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
