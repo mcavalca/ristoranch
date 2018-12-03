@@ -96,15 +96,40 @@
       <ul class="sidebar navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="index.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <i class="fas fa-fw fa-home"></i>
             <span>Home</span>
           </a>
         </li>
           
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-id-card"></i>
+            <span>Usuários</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="#">Adicionar</a>
+            <a class="dropdown-item" href="#">Modificar</a>
+            <a class="dropdown-item" href="#">Consultar</a>
+            <a class="dropdown-item" href="#">Remover</a>
+          </div> 
+        </li>
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-building"></i>
+            <span>Restaurante</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="adicionar-restaurante.html">Adicionar</a>
+            <a class="dropdown-item" href="modificar-restaurante.html">Modificar</a>
+            <a class="dropdown-item" href="remover-restaurante.html">Remover</a>
+          </div> 
+        </li>
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Gerenciar Cardápio</span>
+            <span>Cardápios</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <h6 class="dropdown-header">Cardápio</h6>
@@ -145,6 +170,13 @@
           </div>
         </li>
           
+        <li class="nav-item">
+          <a class="nav-link" href="metodos.html">
+            <i class="fas fa-fw fa-credit-card"></i>
+            <span>Métodos de Pagamento</span>
+          </a>
+        </li>
+          
       </ul>
 
       <div id="content-wrapper">
@@ -160,15 +192,17 @@
           </ol>
             -->
           <!-- Page Content -->
+            
           <h2>Adicionar Cardápio</h2>
+            
           <hr>
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-3">
                     <p>Nome</p>
                     <input type="text" value="Cardápio 1" class="form-control">
                 </div>
-
             </div>
+            
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-3">
                     <p>Descrição</p>
@@ -176,33 +210,28 @@
                 </div>
 
             </div>
+            
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Código de Confirmação</p>
-                    <input type="text" placeholder="A1B2C3D4" value="-" class="form-control">
-                </div>
-
-            </div>
-            <!--
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <input type="checkbox" id="usr">
+                    <input type="checkbox" id="usr" checked>
                     <label for="usr">Tornar ativo</label>
                 </div>
-
             </div>
-            -->
+            
             <hr>
+            
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-3">
                     <br><a class="btn btn-primary" href="modificar-cardapio.html">Confirmar</a>
                     <a class="btn btn-secondary" href="modificar-cardapio.html">Cancelar</a>
                 </div>
             </div>
+            
         </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
+          
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">

@@ -182,70 +182,88 @@
       <div id="content-wrapper">
 
         <div class="container-fluid">
-        
-          <!-- Breadcrumbs--><!--
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Adicionar usuário(s)</li>
-          </ol>
-            -->
-          <!-- Page Content -->
-          <h2>Modificar item</h2>
-          <hr>
-          <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Nome</p>
-                    <input type="text" placeholder="" class="form-control" value="Item 1">
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Descrição</p>
-                    <textarea rows="4" cols="50" placeholder="" class="form-control">Descrição do item</textarea>
-                </div>
-
-            </div>
-            
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Preço</p>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">R$</div>
-                        </div>
-                        <input type="number" placeholder="00.00" class="form-control" value="10.00">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <p>Promoção/Desconto</p>
-                    <div class="input-group mb-2">
-                        <input type="number" placeholder="00.00" class="form-control" id="promocao">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">%</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-            <!--
-            <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                    <input type="checkbox" id="usr">
-                    <label for="usr">Tornar ativo</label>
-                </div>
-
-            </div>
-            -->
-            
+            <h2>Métodos de Pagamento</h2>
             <hr>
+            <h4>Métodos existentes</h4>
+            <br>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                      <thead>
+                        <tr>
+                            <th>Nome</th>
+                          <th>Data de criação</th>
+                          <th>Criado por</th>
+                        </tr>
+                      </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dinheiro</td>
+                                <td>30/11/2018 09:55</td>
+                                <td>Marcelo Cavalca</td>
+                            </tr>
+                            <tr>
+                                <td>Cartões (crédito, débito)</td>
+                                <td>01/12/2018 12:26</td>
+                                <td>Administrador</td>
+                            </tr>
+                            <tr>
+                                <td>Cupons</td>
+                                <td>01/12/2018 12:43</td>
+                                <td>Gerente</td>
+                            </tr>
+
+                            <!-- APAGAR -->
+
+                            <!-- APAGAR -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <h4>Adicionar</h4>
+            <br>
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-3">
-                    <br><a class="btn btn-primary" href="modificar-item.html">Confirmar</a>
-                    <a class="btn btn-secondary" href="modificar-item.html">Cancelar</a>
+                    <p>Nome </p>
+                    <input type="text" placeholder="Dinheiro, cartão...">
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <a class="btn btn-primary" href="#">Adicionar</a>
+                </div>
+            </div>
+            <hr>
+            <h4>Modificar</h4>
+            <br>
+            <div class="row">           
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <input type="text" value="Dinheiro">
+                </div>           
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <button class="btn btn-primary">Confirmar</button>
+                    <button class="btn btn-danger">Remover</button>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <input type="text" value="Cartões (crédito, débito)">
+                </div>           
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <button class="btn btn-primary">Confirmar</button>
+                    <button class="btn btn-danger">Remover</button>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <input type="text" value="Cupons">
+                </div>           
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <button class="btn btn-primary">Confirmar</button>
+                    <button class="btn btn-danger">Remover</button>
                 </div>
             </div>
             
+            
+        <!-- Page Content -->
         </div>
         <!-- /.container-fluid -->
 
